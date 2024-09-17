@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="t-center">Sign Up</h2>
+      <form action="process_signup.php" method="POST" id="signUpForm">
+        <div class="inputDiv">
+          <label for="newUsername" class="username">New Username</label>
+          <div class="userArea">
+            <input
+              type="text"
+              name="newUsername"
+              id="newUsername"
+              placeholder="Type your new username"
+              required
+            />
+          </div>
+          <hr />
+        </div>
+        <div class="inputDiv">
+          <label for="newPassword" class="username">New Password</label>
+          <div class="userArea">
+            <input
+              type="password"
+              name="newPassword"
+              id="newPassword"
+              placeholder="Type your new password"
+              required
+            />
+          </div>
+          <hr />
+        </div>
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
